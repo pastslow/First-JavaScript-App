@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My calculator</title>
+    <link rel="icon" href="calculator.png" sizes="16x16">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="calculator" id="calc">
+        <span class="span">Simple Math Calculator</span>
+
+        <div class="lcd">
+            <input class="display" placeholder="0" readonly type="text" name="" id="input" />
+            <input class="display" readonly type="text" name="" id="result" />
+        </div>
+
+        <div class="Calc-btn">
+            <div>
+                <input class="btnCE" onclick="clearScreen()" type="button" value="CE" name="" id="" />
+                <input class="btnBack"onclick="backspace()" type="button" value="&#8592" name="" id="" />
+                <input class="btn" onclick="brakers()" type="button" value="( )" name="" id="" />
+            </div>
+            <div class="allpad">
+                <div class="firstPad">
+                    <input class="btn" onclick="getNumber(7)"  type="button" value="7" name="" id="" />
+                    <input class="btn" onclick="getNumber(8)" type="button" value="8" name="" id="" />
+                    <input class="btn" onclick="getNumber(9)" type="button" value="9" name="" id="" />
+
+                    <input class="btn" onclick="getNumber(4)" type="button" value="4" name="" id="" />
+                    <input class="btn" onclick="getNumber(5)" type="button" value="5" name="" id="" />
+                    <input class="btn" onclick="getNumber(6)" type="button" value="6" name="" id="" />
+
+                    <input class="btn" onclick="getNumber(1)" type="button" value="1" name="" id="" />
+                    <input class="btn" onclick="getNumber(2)" type="button" value="2" name="" id="" />
+                    <input class="btn" onclick="getNumber(3)" type="button" value="3" name="" id="" />
+
+                    <input class="btn" onclick="getNumber(0)" type="button" value="0" name="" id="" />
+                    <input class="btn" onclick="getNumber('dot')" type="button" value="." name="" id="" />
+                    <button class="btn" onclick="powUp()">x<sup>2</sup></button>
+                </div>
+
+
+
+                <div class="secondPad">
+                    <input class="btn" onclick="getOperand('+/-')" type="button" value="+/-" name="" id="" />
+                    <input class="btn" onclick="getOperand('*')" type="button" value="x" name="" id="" />
+                    <input class="btnPlus" onclick="getOperand('+')" type="button" value="+" name="" id="" />
+                </div>
+
+
+                <div class="thirdPad">
+                    <input class="btn" onclick="radical()" type="button" value="&#8730" name="" id="" />
+                    <input class="btn" onclick="getOperand('/')" type="button" value="&#247" name="" id="" />
+                    <input class="btn" onclick="getOperand('-')" type="button" value="-" name="" id="" />
+                    <input class="btn" onclick="calculate()" type="button" value="=" name="" id="" />
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="designBar">
+
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
